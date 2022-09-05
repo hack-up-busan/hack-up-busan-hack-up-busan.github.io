@@ -1,6 +1,7 @@
 ---
 layout: single
 title: ( Flutter/Dart 기초) - Future, async, await 
+categories: Dart
 ---
 
 ![flutter future](https://navoki.com/wp-content/uploads/2019/10/future-min.png)
