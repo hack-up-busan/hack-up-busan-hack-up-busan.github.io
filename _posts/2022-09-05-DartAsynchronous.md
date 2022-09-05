@@ -92,7 +92,7 @@ async 및 await 키워드는 비동기 함수를 정의하고 결과를 사용�
 
 ### async 및 await를 사용할 때 두 가지 기본 가이드라인
 
-1. **async 함수를 정의하려면, 함수 바디 앞에 async 키워드를 추가.**
+ 1.  **async 함수를 정의하려면, 함수 바디 앞에 async 키워드를 추가.** 
 
 ```dart
 **void main( ) async { …. }**
@@ -104,7 +104,7 @@ async 및 await 키워드는 비동기 함수를 정의하고 결과를 사용�
 **Future<Type> main( ) async { …. }**
 ```
 
-2. **await 키워드는 async 함수에서만 작동함.**
+2.  **await 키워드는 async 함수에서만 작동함.**
 
 async 함수가 있으면 await 키워드를 사용하여 future 함수가 완료될 때까지 기다릴 수 있음
 
