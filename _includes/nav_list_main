@@ -12,14 +12,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Dart" %}
-                        <li><a href="/categories/dart" class="">Dart 기초({{category[1].size}})</a></li>
+                        <li><a href="/categories/Dart" class="">Dart 기초({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Flutter" %}
-                        <li><a href="/categories/flutter" class="">Flutter FrameWork({{category[1].size}})</a></li>
+                        <li><a href="/categories/Flutter" class="">Flutter FrameWork({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -27,14 +27,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm" class="">알고리즘 구현({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Data_Structure" %}
-                        <li><a href="/categories/datastructure" class="">자료구조({{category[1].size}})</a></li>
+                        <li><a href="/categories/Datastructure" class="">자료구조({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
