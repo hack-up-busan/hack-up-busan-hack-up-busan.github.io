@@ -1,6 +1,6 @@
 ---
 layout: single
-categories: dart
+categories: Dart
 title: ( Flutter/Dart 기초) - Future, async, await 
 ---
 
