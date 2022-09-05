@@ -12,7 +12,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Dart" %}
-                        <li><a href="/categories/dart" class="">Dart({{category[1].size}})</a></li>
+                        <li><a href="/categories/dart" class="">Dart core({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
