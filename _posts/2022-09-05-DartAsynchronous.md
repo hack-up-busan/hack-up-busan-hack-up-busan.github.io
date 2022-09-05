@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Future, async, await - Flutter(Dart)의 비동기식 프로그래밍
+title: [Flutter(Dart) 기초] - Future, async, await 
 ---
 
 ![flutter future](https://navoki.com/wp-content/uploads/2019/10/future-min.png)
