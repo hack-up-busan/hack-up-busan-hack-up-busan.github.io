@@ -6,8 +6,8 @@ title: Futures, async, await - Flutter의 비동기식 프로그래밍
 
 그렇다고 해서 플러터 앱이 동시에 여러가지 작업을 못하는 것은 아닙니다 ! 
 
-### 플러터는 이벤트 루프를 사용합니다.
-
+## 플러터는 이벤트 루프를 사용합니다.
+---
  앱이 시작되고 앱이 멈추는 사이에 사용자들이 계속 탭을 누르는 등  수많은 이벤트가 발생할 것입니다.
 
  앱은 사용자들이 언제 탭을 눌러 어떤 순서로 이벤트들을 발생시킬지 예측할 수 없고 단일 스레드로 이러한 모든 이벤트들을 처리해야 합니다. 그래서 앱은 이벤트 루프를 실행합니다. 이벤트 큐에서 가장 오래된 이벤트를 가져와서 처리하고 이 과정을 이벤트큐가 비워질 때까지 반복합니다. 
@@ -17,8 +17,8 @@ title: Futures, async, await - Flutter의 비동기식 프로그래밍
 ![event loop](https://user-images.githubusercontent.com/110464205/188399602-40d66d87-dced-452b-b6d5-b1ae42fdbc05.jpg)
 
 
-### 한 이벤트가 작업량이 많아서 느려도 기다릴 필요가 없습니다.
-
+## 한 이벤트가 작업량이 많아서 느려도 기다릴 필요가 없습니다.
+---
 다트(Dart)는 다음과 같은 방식으로 이를 처리합니다. 
 
 1. 처리가 오래걸리는 이벤트는 일단 시작됩니다. 
@@ -39,7 +39,7 @@ Future myFuture = ReadaFile();
 Future는 지금은 없지만 미래 어느 시점에 요청한 데이터 혹은 에러가 담길 박스라고 생각하시면됩니다.  즉, 요청한 작업의 결과를 기다리지 않고 바로 다음 작업으로 넘어가고 그 후 작업이 완료되면 결과를 받는 방식이라고 보시면 됩니다.
 
 **플러터에서 Future를 사용해서 데이터를 처리하는 방법**
-
+---
 보통 콜백이라는 함수를 등록하여 Future에 데이터가 준비되면 그 데이터로 무엇을 할지 알려줍니다. 
 
 **myFuture.then(myCallback);**
@@ -74,11 +74,11 @@ RaisedButton( // (1)
 
 (3) .then() 함수는 그 데이터를 받아서 그 데이터가 .then() 함수의 바디 {  } 내에 정의된 조건에 부합하면 데이터 받기 성공!! 을 콘솔에 표시합니다. 
 
-### Dart 에서 더 직관적으로 이해해봅시다
-
+## Dart에서 더 직관적으로 이해해봅시다
+---
 다음은 다트가 실행하는 코드 흐름입니다. 
   
-<iframe src="https://dartpad.dev/embed-flutter.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:700px"></iframe>
+<iframe src="https://dartpad.dev/embed-flutter.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:300px"></iframe>
 
 Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)
 
@@ -168,7 +168,7 @@ Future <void> main() async {
 
 ## **async와 await가 있을 때 실행 흐름**
 
-<iframe src="https://dartpad.dev/embed-flutter.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:700px"></iframe>  
+<iframe src="https://dartpad.dev/embed-flutter.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:300px"></iframe>  
   
 async 함수에서 첫 번째 await 키워드까지는 동기적으로 실행됩니다.
 
@@ -188,8 +188,7 @@ print('고객의 주문을 기다리는 중...');
 혹여나 살펴보면서 잘 모르는 부분이나 궁금하신 점이 있으시다면 편하게 댓글 남겨주시면 감사하겠습니다:)
 
 ## 참고 문헌
----
-[Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await)
-[dart:async library - Dart API](https://api.dart.dev/stable/2.17.6/dart-async/dart-async-library.html)
-[Futures, async, await: Threading in Flutter](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)
+[Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await)<br/>
+[dart:async library - Dart API](https://api.dart.dev/stable/2.17.6/dart-async/dart-async-library.html)<br/>
+[Futures, async, await: Threading in Flutter](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)<br/>
 [Dart asynchronous programming: Futures](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)
