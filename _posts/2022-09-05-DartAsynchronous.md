@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Futures, async, await - Flutter의 비동기식 프로그래밍
+title: Future, async, await - Flutter(Dart)의 비동기식 프로그래밍
 ---
 플러터는 단일 스레드(single-threaded) 언어인 다트를 사용하여 작성합니다. 단일 스레드는 한 번에 한 가지의 작업만 수행할 수 있는데, 이는 플러터 앱이 한 번에 한 가지 작업만 수행할 수 있음을 의미합니다.  
 
@@ -78,7 +78,7 @@ RaisedButton( // (1)
 ---
 다음은 다트가 실행하는 코드 흐름입니다. 
   
-<iframe src="https://dartpad.dev/embed-dart.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:300px"></iframe>
+<iframe src="https://dartpad.dev/embed-dart.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:120%; height:400px"></iframe>
 
 Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)
 Line 3 : fetchUserOrder 메소드는 2초 후에 문자열 Americano를 결과값으로 내놓을 future 박스를 만든 뒤 바로
@@ -112,9 +112,9 @@ async 함수가 있으면 await 키워드를 사용하여 future 함수가 완�
  **print(await Order( ) );**
 ```
 
-다음 두 가지 예시에서 차이점을 주목해보세요! 
+### 다음 두 가지 예시의 차이점을 주목해보세요! 
 
-1) 동기식 함수 
+#### 1) 동기식 함수 
 
 ```dart
 String createOrderMessage() {
@@ -136,7 +136,7 @@ void main() {
 
 Line 3 에서 $order에  `fetchUserOrder` 메소드의 리턴 값을 받는데, Line 2의 `fetchUserOrder` 메소드를 실행한 후 2초가 지나지 않았기 때문에 Instance of Future<String>을 반환하는 것입니다. (uncompleted future)
 
-2) 비동기식 함수
+#### 2) 비동기식 함수
 
 ```dart
 Future<String> createOrderMessage() async {
@@ -156,7 +156,7 @@ Future <void> main() async {
 
 **Line 2: 동기식 실행과 다른 점은 `await` 키워드 때문에 `fetchUserOrder` 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
-`두 예시의 차이점은 다음과 같이 3가지 입니다:`
+==두 예시의 차이점은 다음과 같이 3가지 입니다:==
 
 - createOrderMessage()의 반환 타입이 String 에서 Future<String>으로 바뀐 점
 - **async** 키워드가 `createOrderMessage()`와 `main()` 함수 바디 {  } 앞에 명시된 점
@@ -164,7 +164,7 @@ Future <void> main() async {
 
 ## **async와 await가 있을 때 실행 흐름**
 
-<iframe src="https://dartpad.dev/embed-dart.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:300px"></iframe>  
+<iframe src="https://dartpad.dev/embed-dart.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:120%; height:400px"></iframe>  
   
 async 함수에서 첫 번째 await 키워드까지는 동기적으로 실행됩니다.
 
