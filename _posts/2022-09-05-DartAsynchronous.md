@@ -166,7 +166,7 @@ Future <void> main() async {
 
 ## **async와 await가 있을 때 실행 흐름**
 
-<iframe src="https://dartpad.dev/embed-dart.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:120%; height:400px"></iframe>  
+<iframe src="https://dartpad.dev/embed-dart.html?id=ca77d01189c178cad466cc3aa3a2b4ab" style="width:120%; height:400px"></iframe>  
   
 async 함수에서 첫 번째 await 키워드까지는 동기적으로 실행됩니다.
 
