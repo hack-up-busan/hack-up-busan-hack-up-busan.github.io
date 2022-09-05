@@ -14,8 +14,8 @@ title: Futures, async, await - Flutter의 비동기식 프로그래밍
 
 앱이 실행되는 동안(사용자가 폰 화면을 터치하거나, 뭔가를 다운로드하는 등) 이벤트 루프는 이러한 이벤트들을 한 번에 하나씩 처리하면서 돌아가고 있습니다.
 
-![event loop.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/529e99b8-1a9e-4b7a-93ca-5bba9ac8b8aa/event_loop.jpg)
-출처: Speaker Deck
+![event loop](https://user-images.githubusercontent.com/110464205/188399602-40d66d87-dced-452b-b6d5-b1ae42fdbc05.jpg)
+
 
 ### 한 이벤트가 작업량이 많아서 느려도 기다릴 필요가 없습니다.
 
@@ -132,7 +132,7 @@ void main() {
   print(createOrderMessage());
 }
 ```
-![동기식.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9952ec4e-6748-4d19-80c7-b195147bac79/%EB%8F%99%EA%B8%B0%EC%8B%9D.png)
+![동기식](https://user-images.githubusercontent.com/110464205/188399316-ca4e52a6-f814-4438-b936-cc9ebde4f571.png)
 
 간단하게 설명하자면, 
 
@@ -154,7 +154,7 @@ Future <void> main() async {
   print(await createOrderMessage());
 }
 ```
-![비동기식.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56f93f30-f71c-46d4-8eac-570ec09c093d/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D.png)
+![비동기식](https://user-images.githubusercontent.com/110464205/188399433-244ef733-d73a-40ec-86ae-3dcca57e9e07.png)
 
 **Line 2: 동기식 실행과 다른 점은 await 키워드 때문에 fetchUserOrder 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
