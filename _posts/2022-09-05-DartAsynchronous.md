@@ -77,6 +77,8 @@ RaisedButton( // (1)
 ### Dart 에서 더 직관적으로 이해해봅시다
 
 다음은 다트가 실행하는 코드 흐름입니다. 
+  
+<iframe src="https://dartpad.dev/embed-flutter.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:700px"></iframe>
 
 Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)
 
@@ -158,7 +160,7 @@ Future <void> main() async {
 
 **Line 2: 동기식 실행과 다른 점은 `await` 키워드 때문에 `fetchUserOrder` 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
-두 예시의 차이점은 다음과 같이 3가지 입니다:
+`두 예시의 차이점은 다음과 같이 3가지 입니다:`
 
 - createOrderMessage()의 반환 타입이 String 에서 Future<String>으로 바뀐 점
 - **async** 키워드가 `createOrderMessage()`와 `main()` 함수 바디 {  } 앞에 명시된 점
@@ -166,6 +168,8 @@ Future <void> main() async {
 
 ## **async와 await가 있을 때 실행 흐름**
 
+<iframe src="https://dartpad.dev/embed-flutter.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:700px"></iframe>  
+  
 async 함수에서 첫 번째 await 키워드까지는 동기적으로 실행됩니다.
 
 즉, async 함수 본문 내에서 첫 번째 await 키워드 이전의 모든 동기 코드가 즉각적으로 실행됨을 의미합니다. 
@@ -184,13 +188,8 @@ print('고객의 주문을 기다리는 중...');
 혹여나 살펴보면서 잘 모르는 부분이나 궁금하신 점이 있으시다면 편하게 댓글 남겨주시면 감사하겠습니다:)
 
 ## 참고 문헌
-
 ---
-
 [Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await)
-
 [dart:async library - Dart API](https://api.dart.dev/stable/2.17.6/dart-async/dart-async-library.html)
-
 [Futures, async, await: Threading in Flutter](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)
-
 [Dart asynchronous programming: Futures](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)
