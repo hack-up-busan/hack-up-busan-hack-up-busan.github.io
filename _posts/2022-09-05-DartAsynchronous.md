@@ -80,11 +80,11 @@ RaisedButton( // (1)
   
 <iframe src="https://dartpad.dev/embed-dart.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:120%; height:400px"></iframe>
 
-Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)
-Line 3 : fetchUserOrder 메소드는 2초 후에 문자열 Americano를 결과값으로 내놓을 future 박스를 만든 뒤 바로
-Line 8 : ****콘솔에 ‘고객의 주문을 받고 있습니다… 를 표시 
-**중요한 것은 fetchUserOrder의 결과값을 받으려면 2초가 걸리기 때문에 이를 기다리지 않고 Line 8번 코드를 바로 실행하는 것입니다.** 
-Line 7 : 2초 후 future 박스 안에 들어있던 문자열 Americano를 콘솔에 표시하면서 본문 종료.
+Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)<br/>
+Line 3 : fetchUserOrder 메소드는 2초 후에 문자열 Americano를 결과값으로 내놓을 future 박스를 만든 뒤 바로<br/>
+Line 8 : ****콘솔에 ‘고객의 주문을 받고 있습니다… 를 표시<br/>
+**중요한 것은 fetchUserOrder의 결과값을 받으려면 2초가 걸리기 때문에 이를 기다리지 않고 Line 8번 코드를 바로 실행하는 것입니다.**<br/>
+Line 7 : 2초 후 future 박스 안에 들어있던 문자열 Americano를 콘솔에 표시하면서 본문 종료.<br/>
 
 ## **async와 await**
 
@@ -98,10 +98,10 @@ async 및 await 키워드는 비동기 함수를 정의하고 결과를 사용�
 **void main( ) async { …. }**
 ```
 
-반환할 값이 선언된 함수라면 Future<T>로 변경.
+반환할 값이 선언된 함수라면 Future<Type>로 변경.
 
 ```dart
-**Future<T> main( ) async { …. }**
+**Future<Type> main( ) async { …. }**
 ```
 
 2. **await 키워드는 async 함수에서만 작동함.**
@@ -156,7 +156,7 @@ Future <void> main() async {
 
 **Line 2: 동기식 실행과 다른 점은 `await` 키워드 때문에 `fetchUserOrder` 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
-==두 예시의 차이점은 다음과 같이 3가지 입니다:==
+== 두 예시의 차이점은 다음과 같이 3가지 입니다: ==
 
 - createOrderMessage()의 반환 타입이 String 에서 Future<String>으로 바뀐 점
 - **async** 키워드가 `createOrderMessage()`와 `main()` 함수 바디 {  } 앞에 명시된 점
