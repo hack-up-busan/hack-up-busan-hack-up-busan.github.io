@@ -136,7 +136,7 @@ void main() {
 
 간단하게 설명하자면, 
 
-Line 3 에서 $order에  fetchUserOrder 메소드의 리턴 값을 받는데, Line 2의 fetchUserOrder 메소드를 실행한 후 2초가 지나지 않았기 때문에 Instance of Future<String>을 반환하는 것입니 (uncompleted future)
+Line 3 에서 $order에  `fetchUserOrder` 메소드의 리턴 값을 받는데, Line 2의 `fetchUserOrder` 메소드를 실행한 후 2초가 지나지 않았기 때문에 Instance of Future<String>을 반환하는 것입니다. (uncompleted future)
 
 2) 비동기식 함수
 
@@ -156,13 +156,13 @@ Future <void> main() async {
 ```
 ![비동기식](https://user-images.githubusercontent.com/110464205/188399433-244ef733-d73a-40ec-86ae-3dcca57e9e07.png)
 
-**Line 2: 동기식 실행과 다른 점은 await 키워드 때문에 fetchUserOrder 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
+**Line 2: 동기식 실행과 다른 점은 `await` 키워드 때문에 `fetchUserOrder` 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
 두 예시의 차이점은 다음과 같이 3가지 입니다:
 
 - createOrderMessage()의 반환 타입이 String 에서 Future<String>으로 바뀐 점
-- **async** 키워드가 createOrderMessage()와 main() 함수 바디 {  } 앞에 명시된 점
-- **await** 키워드는 비동기 함수 fetchUserOrder() 및 createOrderMessage()  앞에 명시해야 한다는 점
+- **async** 키워드가 `createOrderMessage()`와 `main()` 함수 바디 {  } 앞에 명시된 점
+- **await** 키워드는 비동기 함수 `fetchUserOrder`() 및 `createOrderMessage()`  앞에 명시해야 한다는 점
 
 ## **async와 await가 있을 때 실행 흐름**
 
