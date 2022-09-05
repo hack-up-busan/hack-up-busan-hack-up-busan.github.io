@@ -78,16 +78,12 @@ RaisedButton( // (1)
 ---
 다음은 다트가 실행하는 코드 흐름입니다. 
   
-<iframe src="https://dartpad.dev/embed-flutter.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:300px"></iframe>
+<iframe src="https://dartpad.dev/embed-dart.html?id=fe444d0bd811a5e1471970d3f8abd1ad" style="width:100%; height:300px"></iframe>
 
 Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)
-
 Line 3 : fetchUserOrder 메소드는 2초 후에 문자열 Americano를 결과값으로 내놓을 future 박스를 만든 뒤 바로
-
 Line 8 : ****콘솔에 ‘고객의 주문을 받고 있습니다… 를 표시 
-
 **중요한 것은 fetchUserOrder의 결과값을 받으려면 2초가 걸리기 때문에 이를 기다리지 않고 Line 8번 코드를 바로 실행하는 것입니다.** 
-
 Line 7 : 2초 후 future 박스 안에 들어있던 문자열 Americano를 콘솔에 표시하면서 본문 종료.
 
 ## **async와 await**
@@ -168,7 +164,7 @@ Future <void> main() async {
 
 ## **async와 await가 있을 때 실행 흐름**
 
-<iframe src="https://dartpad.dev/embed-flutter.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:300px"></iframe>  
+<iframe src="https://dartpad.dev/embed-dart.html?id=524f8fdb0bbdb695a23dc018f1914ab3" style="width:100%; height:300px"></iframe>  
   
 async 함수에서 첫 번째 await 키워드까지는 동기적으로 실행됩니다.
 
