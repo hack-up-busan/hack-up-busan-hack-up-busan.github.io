@@ -1,7 +1,7 @@
 ---
 title: "Dart 핵심 문법"
 layout: archive
-permalink: categories/Dart
+permalink: categories/dart
 author_profile: true
 sidebar_main: true
 ---
