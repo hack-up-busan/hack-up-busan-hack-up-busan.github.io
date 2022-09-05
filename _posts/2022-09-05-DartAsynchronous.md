@@ -132,8 +132,7 @@ void main() {
   print(createOrderMessage());
 }
 ```
-
-![화면 캡처 2022-09-05 152848.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d130de7-eab9-4b75-97a4-993657279ed2/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-09-05_152848.png)
+![동기식.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9952ec4e-6748-4d19-80c7-b195147bac79/%EB%8F%99%EA%B8%B0%EC%8B%9D.png)
 
 간단하게 설명하자면, 
 
@@ -155,8 +154,7 @@ Future <void> main() async {
   print(await createOrderMessage());
 }
 ```
-
-![화면 캡처 2022-09-05 153146.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/111fb892-7f68-4a9a-9d80-ced27f55e141/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-09-05_153146.png)
+![비동기식.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56f93f30-f71c-46d4-8eac-570ec09c093d/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D.png)
 
 **Line 2: 동기식 실행과 다른 점은 await 키워드 때문에 fetchUserOrder 메소드가 리턴값을 반환해야 다음 코드로 넘어갑니다. 즉,  ‘바닐라라떼’ 라는 리턴값을 받고 Line 3 코드를 실행하기 때문에 콘솔에 Your order is: 바닐라라떼 가 출력됩니다.**
 
