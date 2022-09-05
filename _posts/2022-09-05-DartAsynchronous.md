@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Futures, async, await: Flutter의 비동기식 프로그래밍
+title: Futures, async, await - Flutter의 비동기식 프로그래밍
 ---
 플러터는 단일 스레드(single-threaded) 언어인 다트를 사용하여 작성합니다. 단일 스레드는 한 번에 한 가지의 작업만 수행할 수 있는데, 이는 플러터 앱이 한 번에 한 가지 작업만 수행할 수 있음을 의미합니다.  
 
@@ -106,7 +106,7 @@ async 및 await 키워드는 비동기 함수를 정의하고 결과를 사용�
 **Future<T> main( ) async { …. }**
 ```
 
-1. **await 키워드는 async 함수에서만 작동함.**
+2. **await 키워드는 async 함수에서만 작동함.**
 
 async 함수가 있으면 await 키워드를 사용하여 future 함수가 완료될 때까지 기다릴 수 있음
 
@@ -189,10 +189,10 @@ print('고객의 주문을 기다리는 중...');
 
 ---
 
-[Asynchronous programming: futures, async, await | Dart](https://dart.dev/codelabs/async-await)
-
-[Futures, async, await: Threading in Flutter | by Rap Payne | Flutter Community | Medium](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)
+[Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await)
 
 [dart:async library - Dart API](https://api.dart.dev/stable/2.17.6/dart-async/dart-async-library.html)
 
-[Dart asynchronous programming: Futures | by Kathy Walrath | Dart | Medium](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)
+[Futures, async, await: Threading in Flutter](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)
+
+[Dart asynchronous programming: Futures](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)
