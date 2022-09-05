@@ -2,6 +2,10 @@
 layout: single
 title: Future, async, await - Flutter(Dart)의 비동기식 프로그래밍
 ---
+
+![flutter future](https://navoki.com/wp-content/uploads/2019/10/future-min.png)
+출처: Navoki
+
 플러터는 단일 스레드(single-threaded) 언어인 다트를 사용하여 작성합니다. 단일 스레드는 한 번에 한 가지의 작업만 수행할 수 있는데, 이는 플러터 앱이 한 번에 한 가지 작업만 수행할 수 있음을 의미합니다.  
 
 그렇다고 해서 플러터 앱이 동시에 여러가지 작업을 못하는 것은 아닙니다 ! 
