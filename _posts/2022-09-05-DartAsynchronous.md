@@ -36,7 +36,7 @@ Future myFuture = ReadaFile();
 // Dart는 다른 이벤트를 처리하러 갑니다.
 ```
 
-Future는 지금은 없지만 미래 어느 시점에 요청한 데이터 혹은 에러가 담길 박스라고 생각하시면됩니다.  즉, 요청한 작업의 결과를 기다리지 않고 바로 다음 작업으로 넘어가고 그 후 작업이 완료되면 결과를 받는 방식이라고 보시면 됩니다.
+Future는 지금은 없지만 <span style="color:orange">미래</span> 어느 시점에 요청한 데이터 혹은 에러가 담길 박스라고 생각하시면됩니다.  <U>즉, 요청한 작업의 결과를 기다리지 않고 바로 다음 작업으로 넘어가고 그 후 작업이 완료되면 결과를 받는 방식이라고 보시면 됩니다.</U>
 
 **플러터에서 Future를 사용해서 데이터를 처리하는 방법**
 ---
@@ -82,8 +82,8 @@ RaisedButton( // (1)
 
 Line 7 : fetchUserOrder 메소드를 호출. (카페 직원이 고객의 주문을 받으려고 기다리고 있다고 생각하시면 됩니다.)<br/>
 Line 3 : fetchUserOrder 메소드는 2초 후에 문자열 Americano를 결과값으로 내놓을 future 박스를 만든 뒤 바로<br/>
-Line 8 : ****콘솔에 ‘고객의 주문을 받고 있습니다… 를 표시<br/>
-**중요한 것은 fetchUserOrder의 결과값을 받으려면 2초가 걸리기 때문에 이를 기다리지 않고 Line 8번 코드를 바로 실행하는 것입니다.**<br/>
+Line 8 : 콘솔에 ‘고객의 주문을 받고 있습니다… 를 표시<br/>
+<span style="color:orange">**중요한 것은 fetchUserOrder의 결과값을 받으려면 2초가 걸리기 때문에 이를 기다리지 않고 Line 8번 코드를 바로 실행하는 것입니다.**</span><br/>
 Line 7 : 2초 후 future 박스 안에 들어있던 문자열 Americano를 콘솔에 표시하면서 본문 종료.<br/>
 
 ## **async와 await**
@@ -158,9 +158,9 @@ Future <void> main() async {
 
 == 두 예시의 차이점은 다음과 같이 3가지 입니다: ==
 
-- createOrderMessage()의 반환 타입이 String 에서 Future<String>으로 바뀐 점
-- **async** 키워드가 `createOrderMessage()`와 `main()` 함수 바디 {  } 앞에 명시된 점
-- **await** 키워드는 비동기 함수 `fetchUserOrder`() 및 `createOrderMessage()`  앞에 명시해야 한다는 점
+- <span style="color:orange">'createOrderMessage()'</span>의 반환 타입이 String 에서 <span style="color:orange">Future<String></span>으로 바뀐 점
+- **async** 키워드가 <span style="color:orange">'createOrderMessage()'</span>와 `main()` 함수 바디 {  } 앞에 명시된 점
+- **await** 키워드는 비동기 함수 <span style="color:orange">`fetchUserOrder`() 및 `createOrderMessage()`</span> 앞에 명시해야 한다는 점
 
 ## **async와 await가 있을 때 실행 흐름**
 
