@@ -3,6 +3,10 @@ layout: single
 title: ( Flutter/Dart 기초) - Future, async, await 
 categories:
   - Dart
+tags:
+  - [Flutter, Dart, Future]
+
+date: 2022-09-05
 ---
 
 ![flutter future](https://navoki.com/wp-content/uploads/2019/10/future-min.png)
