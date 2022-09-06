@@ -4,7 +4,7 @@ title: ( Flutter/Dart 기초) - Future, async, await
 categories:
   - Dart
 tags:
-  - [Flutter, Dart, Future]
+  - [Flutter, Future]
 
 date: 2022-09-05
 ---
