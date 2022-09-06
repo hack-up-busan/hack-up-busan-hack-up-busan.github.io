@@ -113,6 +113,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:ckdghks9741@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/changhwan77"   
   #  - label: "Website"
    #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -122,9 +125,6 @@ author:
    # - label: "Facebook"
    #   icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-  #   url: "https://github.com/changhwan77"
    # - label: "Instagram"
       #icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:"https://github.com/changhwan77"
+       url:"https://github.com/changhwan77"
    # - label: "GitLab"
    #   icon: "fab fa-fw fa-gitlab"
       # url:
