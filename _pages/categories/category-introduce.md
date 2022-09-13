@@ -1,5 +1,5 @@
 ---
-title: "Tema 소개"
+title: "Team 소개"
 layout: archive
 permalink: categories/intro
 author_profile: true
