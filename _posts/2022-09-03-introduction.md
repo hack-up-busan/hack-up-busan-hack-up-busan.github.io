@@ -1,7 +1,7 @@
 ---
 layout: single
 categories:
-  - Hackup
+  - Intro
 title: Hack-up 이란? 
 date: 2022-09-03
 comments : true
