@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "CREATE A CRACK"
+title                    : "Hack-up:Busan"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Chang Hwan"
+name                     : "Hackers"
 description              : "Learn & Apply"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "changhwan77/changhwan77.github.io"
+repository               : "hack-up-busan/hack-up-busan.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -104,18 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hwan"
+  name             : "Members: <br/> Kang Chang Hwan <br/> Lee Ye Seul <br/> Yun Seok Hyun <br/><br/> Mento: Lim Nam Gyu"
   avatar           : "/assets/images/jeju.jpg"
-  bio              : "The Joy Of Knowing What I don't know"
+  bio              : "<br/> 세상의 문제를 풀어나가는 넓은 의미의 해커들"
   location         : <br/>"Busan, South Korea"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "ckdghks9741@gmail.com"
+    # label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "ckdghks9741@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/changhwan77"
+      url: "https://github.com/hack-up-busan"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/06.25ash"
@@ -134,7 +134,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/changhwan77"
+      url: "https://github.com/hack-up-busan"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
       # url:
