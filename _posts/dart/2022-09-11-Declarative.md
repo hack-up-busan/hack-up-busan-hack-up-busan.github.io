@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Declarative programming 
+title: "Flutter/Dart 핵심만 쏙 - Declarative programming"
 categories:
   - Dart
 tags:
