@@ -9,11 +9,15 @@ toc: true
 date: 2022-09-11
 ---
 
+dart 언어의 큰 강점인 선언형 프로그래밍 방식을 배우고 싶으신 분들을 위해 쉽게 설명해 보았습니다.<br/>
+주로 명령형으로 코드를 쓰셔서 처음 이 개념을 접하시는 분들도 차이를 이해하면 좋겠습니다.<br/>
+그럼 내용으로 들어가봅시다!<br/>
+
 ## 선언형 프로그래밍 정의와 예시
 
 ♦ 명령형 프로그래밍(imperative programming)은 언어 해석이 순차적이며 <br/>어떠한 방법으로 문제를 해결할지에 초점
   
-♦ 선언형 프로그래밍(declarative programming)은 순서나 문제 해결 과정을 다루기보다<br/>**무엇을** 나타내야 할지에 초점<br/>
+♦ 선언형 프로그래밍(declarative programming)은 순서나 문제 해결 과정을 다루기보다 <br/>**무엇을** 나타내야 할지에 초점
 
 이렇게 말하면 이해가 잘 안가니 예를 들어 설명해보면, 샌드위치를 만들 때(재료는 있다고 가정)<br/>
 
@@ -30,11 +34,13 @@ date: 2022-09-11
 ## 선언형 vs 명령형 프로그래밍 dart코드 비교
 ```dart
 ----------------------------(명령형)
+//${'a' * length} 는 문자 'a'를 length 횟수만큼 반복하라는 뜻
+
 String scream(int length) => "A${'a' * length}h!";
 
 main() {
 
-  final values = [1, 2, 3, 5, 10];
+  final values = [1, 2, 3];
   
   for (var length in values) 
   { 
@@ -43,6 +49,7 @@ main() {
 }
 ```
 
+아래는 for문을 values.map(scream).forEach(print); 로 수정한 함수형 코드이다. (결과값 동일)
 
 ```dart
 ----------------------------(함수형)
@@ -51,8 +58,23 @@ String scream(int length) => "A${'a' * length}h!";
 
 main() {
 
-  final values = [1, 2, 3, 5, 10];
+  final values = [1, 2, 3];
   
-  values.map(scream).forEach(print);  
+  values.map(scream).forEach(print); 
+  // scream 함수를 인수로 넘김
 }
 ```
+
+함수형 프로그래밍에서 할 수 있는 것:
+
+●  다른 함수에 함수를 인수로 넘기기
+
+●  함수에 변수로 할당하기
+
+●  여러 인수를 취하는 함수를 각각 단일 인수를 취하는 일련의 함수로 분해(커링이라고도 함).
+
+Dart는 위의 기능을 모두 제공한다. Dart에서는 함수들은 곧 객체이며 Function타입을 가지고 있다. 
+
+즉, 함수들은 변수로 할당되거나 다른 함수에 인수로 넘겨질 수있다. 
+
+
