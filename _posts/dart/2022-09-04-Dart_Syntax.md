@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Dart 기초 문법 정리"
+title: "Flutter/Dart 핵심만 쏙 - 기초 문법 정리"
 categories:
   - Dart
 tags:
