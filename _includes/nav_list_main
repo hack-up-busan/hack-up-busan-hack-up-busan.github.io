@@ -38,6 +38,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title"> Blog </span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Blog" %}
+                        <li><a href="/categories/blog" class=""> Blog 만드는 법 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
