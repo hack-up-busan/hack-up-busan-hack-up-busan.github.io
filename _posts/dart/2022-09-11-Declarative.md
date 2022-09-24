@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Flutter/Dart 핵심만 쏙 - Declarative programming"
+title: "Flutter/Dart 핵심만 쏙 - 선언형 프로그래"
 categories:
   - Dart
 tags:
@@ -77,4 +77,10 @@ Dart는 위의 기능을 모두 제공한다. Dart에서는 함수들은 곧 객
 
 즉, 함수들은 변수로 할당되거나 다른 함수에 인수로 넘겨질 수있다. 
 
+
+여기까지 dart의 선언형 프로그래밍에 대해 알아보았습니다.
+
+혹여나 살펴보면서 잘 모르는 부분이나 궁금하신 점이 있으시다면 편하게 댓글 남겨주시면 감사하겠습니다:)
+
+작성자: Lee yeseul
 
