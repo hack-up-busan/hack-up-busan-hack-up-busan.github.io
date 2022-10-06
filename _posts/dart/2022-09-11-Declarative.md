@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Flutter/Dart 핵심만 쏙 - 선언형 프로그래밍"
+title: "Flutter/Dart 핵심만 쏙 - 선언형 프로그래밍(미완)"
 categories:
   - Dart
 tags:
