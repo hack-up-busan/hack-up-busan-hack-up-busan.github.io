@@ -7,7 +7,7 @@ date: 2022-11-03
 toc: true
 comments : true
 ---
-- Displaying a full-screen route
+## Displaying a full-screen route
     - MaterialApp의 home이 Navigator 스택의 가장 밑이 되고 앱이 시작될 때 보이는 것임
         
         ```dart
@@ -16,7 +16,7 @@ comments : true
         }
         ```
         
-    - 여기서 push는 내가 이동하고 싶은 Route(페이지)를 Navitor 현재 스택에 추가하는 것을 얘기함. 여기서 push 메소드는
+    - 여기서 push 메소드는 내가 이동하고 싶은 Route(페이지)를 Navitor 현재 스택에 추가하는 것을 얘기함. 
     
     ```dart
     Navigotor.push(context, MaterialPageRoute(
@@ -24,7 +24,7 @@ comments : true
         return Scaffold();}
     ```
     
-- Using named navigator routes
+## named navigator routes 사용하기( 많은 페이지를 관리할 때 용이 )
     - 보통 모바일 앱은 많은 페이지를 가지고 있음. 따라서 페이지 이름을 정해서 사용 것이 더 관리하기 쉬움.
     - 페이지 이름은 문자열(’/a’ ‘/b’ ‘/c’)처럼 설정.
     - 앱의 메인 페이지는 ‘/’ 기본 설정되어 있음.
