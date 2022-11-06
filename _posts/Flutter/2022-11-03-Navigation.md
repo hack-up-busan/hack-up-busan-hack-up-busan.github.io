@@ -68,3 +68,5 @@ void main() {
         
 
 [Navigator class - widgets library - Dart API](https://api.flutter.dev/flutter/widgets/Navigator-class.html)
+
+- 작성자: 강창환
