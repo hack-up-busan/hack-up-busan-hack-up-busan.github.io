@@ -18,8 +18,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Flutter" %}
-                        <li><a href="/categories/flutter" class="">Flutter FrameWork({{category[1].size}})</a></li>
+                    {% if category[0] == "플러터" %}
+                        <li><a href="/categories/flutter" class="">Flutter({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
