@@ -1,1 +1,27 @@
-# Flutter intl 라이브러리
+# Flutter intl 
+
+##  사용예시
+금액을 표시할 때  아래와 같이 세자리 수 마다 쉼표를 찍어서 보여주고 싶을 땐 어떻게 해야할까?
+
+**![](https://lh6.googleusercontent.com/6yuYvtvhSkIbshs7tyT0-rpt1EGzLE7m4joTa8JCGgqjd4eyuJq_HRsI8EaP20_QcJjFHhNw6FppKzT4rpGGe2kJcSxmCCpYdy-h4kyWyENUhRlGXOwWvZJeVi-Z7DFX5_UvSq1bv5rhOdpDJpycTHuWANvd9ECJ3I4c1WwBL0ZbxrW06ensjpZjbA9ix8FS)**
+
+## intl
+문자열을 포메팅해주는 라이브러리라고 할 수 있다. 
+위의 예시처럼 3자리마다 쉼표를 찍어주는 경우가 그 예이다.
+
+## 사용 방법
+https://pub.dev/packages/intl/install
+Flutter에 dependencies를 추가하는 것은 다른 라이브러리 들과 동일 하므로 따로 설명은 하지 않겠다.
+
+class 안에서 formatting을 위한 변수를 선언
+```dart
+final f = NumberFormat('###,###');
+```
+```dart
+'${f.format(money)}원',
+```
+변수명.formart(숫자)
+로 사용한다.
+
+
+
