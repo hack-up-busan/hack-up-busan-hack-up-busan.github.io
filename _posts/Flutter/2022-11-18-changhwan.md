@@ -16,11 +16,8 @@ comments : true
 
 - 그래서 내가 선택한 방법은 **토스 앱 기능 구현을 잠시 멈추고 그동안 스터디 했던 개념들 총정리 및 코드의 질을 높이는 방법을 배우는데 시간 투자.**
     
-    ![안젤라 플러터 부트캠프 스터디](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88667c16-daee-44d6-bb07-9469e8b2ab33/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-11-19_233914.png)
+![화면 캡처 2022-11-19 233914](https://user-images.githubusercontent.com/110464205/202862295-c60aab56-1b69-4cb1-a91f-af1d150c0fe2.png)
     
-    안젤라 플러터 부트캠프 스터디
-    
-
 ### 모듈화 Modularizing
 
 - 먼저 반복되는 부분 (동일하거나 동일한 기능 등)은 반복되지 않도록 함.
@@ -36,7 +33,7 @@ comments : true
 - 추상화 시킨 클래스들이 서로의 기능을 침범하지 않도록 캡슐화시키고 싶은 곳에
     - _ (private) 표시
         
-        ![KakaoTalk_20221120_004001574.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6b815e5-f2f3-4f28-82d2-039f6213274e/KakaoTalk_20221120_004001574.jpg)
+![KakaoTalk_20221120_004001574](https://user-images.githubusercontent.com/110464205/202862324-729a3e3a-92ae-4b7d-b5fc-2496b51b83e8.jpg)
         
 
 ### 상속 Inheritance
