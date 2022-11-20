@@ -1,3 +1,14 @@
+---
+layout: single
+categories:
+  - 플러터
+title: 예슬 피드백
+date: 2022-11-18
+toc: true
+comments : true
+---
+
+
 1. 혼자 코드 구현시 어려웠던 점
 2. 동기화 시 어려웠던 점
 3. 높이 설정의 에러들 //추후
