@@ -1,1 +1,129 @@
+---
+layout: single
+title: "Flutter/Dart 토스의 주식 찜하기 기능 구현"
+categories:
+  - Dart
+tags:
+  - [Flutter]
+date: 2022-12-28
+toc: true
+---
 
+좋아요 기능을 구현하는 과정을 담아보았습니다<br/>bool타입변수로 관리할때와 List로 관리할때의 차이를 보면 좋을것같습니다.
+
+**좋아요 기능 소개**
+
+구현할 것: 리스트의 오른쪽에 하트아이콘을 누르면 색칠되는 것을 구현하려고 한다
+
+우선 bool타입 변수를 생성하여 아래와 같이 구현해보았다.
+
+```dart
+ bool _isLiked = false; // **상태를 저장할 bool타입 변수를 만든다**
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: stockName.length,
+      itemBuilder: (context, index) {
+        return Card(
+          color: kRealTimeStockBackgroundColour,
+          elevation: 0.0, 
+          shape: BeveledRectangleBorder(
+              borderRadius: BorderRadius.zero 
+              ),
+          child: ListTile(
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  stockData[index].name,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17.0,
+                  ),
+                ),
+                //SizedBox(height: 7.0),
+                Text(
+                  stockData[index].addPerson,
+                  style: TextStyle(color: Color(0xFFD1D1E0), fontSize: 13.0),
+                ),
+              ],
+            ),
+            leading: SizedBox(
+              height: 50,
+              width: 50,
+              child: Image.asset(stockData[index].imgPath),
+            ),
+    // 하트 아이콘이 채워져있는지 아닌지에 따라 바뀜
+    trailing: IconButton(
+    icon: _isLiked ? Icon(Icons.favorite, color: Colors.red) : Icon(Icons.favorite_border),
+    onPressed: () {
+        setState(() {
+        _isLiked = !_isLiked;
+        });
+        })),
+        );
+      },
+    );
+  }
+```
+
+위와 같이 구현하게 되면 리스트를 개별적으로 관리하지못한다. 상태를 하나밖에 저장할수 없기때문
+이럴때는 List를 사용하여 여러 리스트의 상태를 저장하면 된다.
+
+
+
+```dart
+  // bool _isLiked = false; // **상태를 저장할 bool타입 변수를 만든다** 아래와 같이 변경
+  List<bool> _isLiked = List.filled(stockName.length, false); 
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: stockName.length,
+      itemBuilder: (context, index) {
+        return Card(
+          color: kRealTimeStockBackgroundColour,
+          elevation: 0.0,
+          shape: BeveledRectangleBorder(
+              borderRadius: BorderRadius.zero
+          ),
+          child: ListTile(
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  stockData[index].name,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17.0,
+                  ),
+                ),
+
+                Text(
+                  stockData[index].addPerson,
+                  style: TextStyle(color: Color(0xFFD1D1E0), fontSize: 13.0),
+                ),
+              ],
+            ),
+            leading: SizedBox(
+              height: 50,
+              width: 50,
+              child: Image.asset(stockData[index].imgPath),
+            ),
+            
+            // _isLike[index]의 값을 기준으로 한다
+            trailing: IconButton(
+              icon: _isLiked[index] ? Icon(Icons.favorite, color: Colors.red) : Icon(Icons.favorite_border),
+              onPressed: () {
+                setState(() {
+                  _isLiked[index] = !_isLiked[index];
+                });
+              },
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+```
