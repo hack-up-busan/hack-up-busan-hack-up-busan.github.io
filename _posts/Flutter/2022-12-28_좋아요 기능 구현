@@ -1,13 +1,13 @@
 ---
 layout: single
-title: Flutter/Dart 토스의 주식 찜하기 기능 구현
 categories:
   - Flutter
-tags:
-  - [Flutter]
+title: Flutter/Dart 토스의 주식 찜하기 기능 구현
 date: 2022-12-28
 toc: true
+comments : true
 ---
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/108365477/210821305-f4295fad-9025-49ef-9896-10a53ed870aa.gif)
 
 ##좋아요 기능을 구현하는 과정을 담아보았습니다<br/>bool타입변수로 관리할때와 List로 관리할때의 차이를 보면 좋을것같습니다.
