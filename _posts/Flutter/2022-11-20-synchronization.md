@@ -1,7 +1,7 @@
 ---
 layout: single
 categories:
-  - 플러터
+  - Flutter
 title: 예슬 피드백
 date: 2022-11-18
 toc: true
