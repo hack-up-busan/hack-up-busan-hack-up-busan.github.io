@@ -8,6 +8,7 @@ tags:
 date: 2022-12-28
 toc: true
 ---
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/108365477/210821305-f4295fad-9025-49ef-9896-10a53ed870aa.gif)
 
 ##좋아요 기능을 구현하는 과정을 담아보았습니다<br/>bool타입변수로 관리할때와 List로 관리할때의 차이를 보면 좋을것같습니다.
 
@@ -67,12 +68,12 @@ toc: true
   }
 ```
 
-![image](https://user-images.githubusercontent.com/108365477/202861005-766a0154-5cea-425f-b890-0b510b9ad738.png)
+
 
 위와 같이 구현하게 되면 리스트를 개별적으로 관리하지못한다. 상태를 하나밖에 저장할수 없기때문이다.<br/>
 이럴때는 List를 사용하여 여러 리스트의 상태를 저장하면 된다.
 
-
+![image](https://user-images.githubusercontent.com/108365477/210808821-7e47d088-591a-4a27-ba22-6207864a1d4f.png)
 
 ```dart
   // bool _isLiked = false; // **상태를 저장할 bool타입 변수를 만든다** 아래와 같이 변경
