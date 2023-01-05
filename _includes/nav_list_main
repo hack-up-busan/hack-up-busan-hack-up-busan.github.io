@@ -12,13 +12,13 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Dart" %}
-                        <li><a href="/categories/dart" class="">Dart Core({{category[1].size}})</a></li>
+                        <li><a href="/categories/dart" class="">Dart({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "플러터" %}
+                    {% if category[0] == "Flutter" %}
                         <li><a href="/categories/flutter" class="">Flutter({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
