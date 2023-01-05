@@ -1,7 +1,7 @@
 ---
 layout: single
 categories:
-  - 플러터
+  - Flutter
 title: Flutter 화면 간 이동시키기
 date: 2022-11-03
 toc: true
