@@ -4,7 +4,7 @@ title: Flutter/Dart 핵심만 쏙 - null safety
 categories:
   - Dart
 tags:
-  - [dart, nullSafety]
+  - [nullSafety]
 toc: true
 date: 2023-01-06
 ---
