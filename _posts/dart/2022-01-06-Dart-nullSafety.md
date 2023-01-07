@@ -61,7 +61,26 @@ class ReusableCard extends StatelessWidget {
 이전에는 class의 field를 nullable로 지정하지 않으면 저절로 null로 지정되기 때문에 저 코드가 문제가 되지 않았지만
 null safety가 들어온 이 후에는 저렇게 class를 만들면 runtime error가 발생한다. 그렇다면 required가 아닌 cardChild를
 올바르게 작성하는 방법은 무엇일까? 
-<iframe src="https://dartpad.dev/embed-flutter.html?id=1877218c2445601140aea794390a632b" style="width:120%; height:700px"></iframe>
+```dart
+class ReusableCard extends StatelessWidget {
+  const ReusableCard({super.key, required this.colour, this.cardChild});
+  final Color colour;
+  final Widget? cardChild;
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        margin: const EdgeInsets.all(15),
+        decoration: BoxDecoration(
+          color: colour,
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
+    );
+  }
+}
+```
+
 정답은 뒤에 ?를 붙여 nullable로 지정해주는 것이다. 
 
 ### 작성자: YunSukHyun
