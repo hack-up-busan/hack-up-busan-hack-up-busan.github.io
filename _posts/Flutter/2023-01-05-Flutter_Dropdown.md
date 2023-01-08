@@ -27,4 +27,4 @@ Expensiontile이 그 주인공이다.
 
 <iframe src="https://dartpad.dev/embed-flutter.html?id=125c9e61db5971e77c2cfc7145d3e8d3" style="width:120%; height:700px"></iframe>
 
-###: YunSukHyun
+### 작성자: YunSukHyun
