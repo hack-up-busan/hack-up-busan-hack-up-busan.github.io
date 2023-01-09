@@ -86,6 +86,7 @@ class ReusableCard extends StatelessWidget {
 정답은 뒤에 ?를 붙여 nullable로 지정해주는 것이다. 
 
 2. 생성될때 초기화되지 않는 변수처리
+
 ```dart
 import 'dart:math';
 
