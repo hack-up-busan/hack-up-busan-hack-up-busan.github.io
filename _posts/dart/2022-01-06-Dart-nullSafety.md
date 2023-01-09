@@ -38,6 +38,8 @@ String cantBeNull! = 'NotNull';
 
 ## null safety 도입 이후 생성자 규칙의 변화
 사실 이것이 내가 이 글을 쓰게된 이유라고 할 수 있다.
+
+1. 
 ```dart
 class ReusableCard extends StatelessWidget {  
   const ReusableCard({super.key, required this.colour, this.cardChild});  
@@ -80,7 +82,57 @@ class ReusableCard extends StatelessWidget {
   }
 }
 ```
-
 정답은 뒤에 ?를 붙여 nullable로 지정해주는 것이다. 
+
+2. 
+```dart
+import 'dart:math';
+
+class CalculatorBrain{
+  CalculatorBrain({required this.height, required this.weight});
+  final int height;
+  final int weight;
+  final double _bmi;	//	Error
+  String calculateBMI(){
+    double _bmi = weight / pow(height/100, 2);
+    return _bmi.toStringAsFixed(1);
+  }
+  String getResult(){
+    if(_bmi >= 25){
+      return 'OverWeight';
+    } else if(_bmi > 18){
+      return'Normal';
+    } else {
+      return 'UnderWeight';
+    }
+  }
+}
+```
+또한 이전에는 생성자에서 초기화되지 않은 변수를 다른 함수에서 초기화 할 때 별다른 조치가 필요가 없었다.
+
+```dart
+import 'dart:math';
+
+class CalculatorBrain{
+  CalculatorBrain({required this.height, required this.weight});
+  final int height;
+  final int weight;
+  late final double _bmi;
+  String calculateBMI(){
+    _bmi = weight / pow(height/100, 2);
+    return _bmi.toStringAsFixed(1);
+  }
+  String getResult(){
+    if(_bmi >= 25){
+      return 'OverWeight';
+    } else if(_bmi > 18){
+      return'Normal';
+    } else {
+      return 'UnderWeight';
+    }
+  }
+}
+```
+하지만 지금은 late를 사용하여 나중에 값이 할당될 변수임을 명시해야 한다.
 
 ### 작성자: YunSukHyun
