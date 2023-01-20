@@ -53,7 +53,9 @@ cd openai-quickstart-node
 cp .env.example .env
 ```
 
+
 새 api key를 생성하고 복사해서 **`.env`** file의 **OPENAI_API_KEY 프로퍼티에 할당함.**
+
 ![5](https://user-images.githubusercontent.com/110464205/213746425-19b298ca-4d07-4943-9a06-c52ad38b3b6f.png)
 ![6](https://user-images.githubusercontent.com/110464205/213746463-ea705d53-c1cf-410d-9cac-df985f77536a.png)
 
