@@ -22,7 +22,7 @@ ChatGPT의 기능은 우리가 궁금한 내용을 입력하면 이 프로그램
 
 공식문서 예제에서는 고양이 이름을 3가지 지어줘 ! 라고 하면 인공지능이 멋진 이름 3가지를 지어준다 ! ㅋㅋㅋ
 
-![1](https://user-images.githubusercontent.com/110464205/213746301-a428c61b-850c-49bf-8d2a-13d78d53c652.png)
+![1](https://user-images.githubusercontent.com/110464205/213746301-a428c61b-850c-49bf-8d2a-13d78d53c652.png)<br>
 그냥 말에서 검은 말로 간단한 형용사를 덧붙였는데 이름이 달라졌다. 
 
 ![2](https://user-images.githubusercontent.com/110464205/213746322-17c96295-5180-4aac-8887-5d6392703f93.png)
@@ -38,7 +38,7 @@ ChatGPT의 기능은 우리가 궁금한 내용을 입력하면 이 프로그램
 Temperature 를 0으로 두면 똑같은 대답만 나오게 됨. 0에 가까울 수록 정답에 가까운 것 같고 1에 가까울 수록 창의적인 ? 답변이 나오는 것 같음.
 
 
-###어플리케이션 빌드 간단하게 따라해보기 
+### 어플리케이션 빌드 간단하게 따라해보기 
 
 NODE.JS 로 진행
 
@@ -84,6 +84,13 @@ Animal: ${capitalizedAnimal}
 Names:`;
 }
 ```
+즉, 슈퍼히어로와 연관시킨 동물 이름 3가지 제안해줘 ! 라고 하고 예시로
+- 고양이는 Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+- 강아지는 Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+이렇게야 라고 알려준뒤 내가 원하는 동물 종류를 기입한다. 
+
+그럼 ! 위와 같이 사자 + 슈퍼히어로를 합친 멋진 이름 세 가지를 추천해준다.
+
 
 ### 사용후기
 
