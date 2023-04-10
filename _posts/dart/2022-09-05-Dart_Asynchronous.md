@@ -197,4 +197,7 @@ print('고객의 주문을 기다리는 중...');
 [Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await)<br/>
 [dart:async library - Dart API](https://api.dart.dev/stable/2.17.6/dart-async/dart-async-library.html)<br/>
 [Futures, async, await: Threading in Flutter](https://medium.com/flutter-community/futures-async-await-threading-in-flutter-baeeab1c1fe3)<br/>
-[Dart asynchronous programming: Futures](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)
+[Dart asynchronous programming: Futures](https://medium.com/dartlang/dart-asynchronous-programming-futures-96937f831137)<br/><br/>
+
+작성자: Steve(강창환)<br/>
+레퍼런스: [세상을 바꾸는 Product Designer의 블로그](https://changhwan77.github.io/)
